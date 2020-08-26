@@ -1,0 +1,142 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+.sky{
+	width: 100%;
+	height: 100vh;
+	background-image: url(../images/sky.jpg);
+	background-size: cover;
+	background-position: center;
+	overflow: hidden;
+	position: relative;
+	overflow-x: hidden;
+	animation: sky 125s linear infinite;
+}
+@keyframes sky {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -4000px 0;
+	}
+	
+}
+
+.road {
+	background-image: url(../images/road.jpg);
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    position:absolute;
+    animation: road 8s linear infinite;
+    background-repeat: repeat-x;
+}
+@keyframes road {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -5139px 0;
+	}
+	
+}
+
+@keyframes building {
+	from {
+		background-position: 0 0;
+	}
+	to {
+		background-position: -1416px 0;
+	}
+	
+}
+
+.city {
+	background-image: url(../images/city.png);
+	width: 100%;
+    height:450px;
+    display: block;
+    bottom: 0;
+    position:absolute;
+    animation: building 5s linear infinite;
+    background-repeat: repeat-x;
+    background-position: 0 0;
+}
+.car {
+	background-image: url(../images/car.png);
+	width: 570px;
+    height: 210px;
+    position: absolute;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 360px;
+    bottom: 70px;
+
+}
+
+.moving-wheel{
+	background-image: url(../images/wheel.png);
+	width: 106px;
+    height: 107px;
+    background-size: 100%;
+    position: absolute;
+    bottom: 48px;
+    background-repeat: no-repeat;
+    animation: rotate-wheel 1.5s linear infinite;
+}
+.back-wheel {
+	left: 408px;
+}
+.front-wheel{
+	left: 757px;
+}
+@keyframes rotate-wheel {
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+.moving-car {
+	animation: moving-cars 10s linear infinite;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    left: 360px;
+    bottom: 70px;
+
+
+}
+@keyframes moving-cars{
+	
+	0%{
+		left: -100%;
+	}
+	50%{
+		left:0%;
+	}
+	100%{
+		left: 100%;
+	}
+}
+.name{
+	text-align: center;
+	color: #fff;
+	font-size: 50px;
+	animation: textmove 6s linear infinite; 
+}
+@keyframes textmove{
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+
+	
+           
+  
